@@ -67,9 +67,10 @@ spec:
 ```
 > [!NOTE]
 > To find latest version of Db2U operator and Db2, goto [IBM Documentation](https://www.ibm.com/docs/en/db2/11.5?topic=deployments-db2-rhos-k8s). Expand Left side menu and pick version.  
-> Db2 for RHOS and K8s -> {pick version} -> Installing Db2 -> Installing the Db2 Operator -> Installing OLM to deploy the Db2 Operator
+> Db2 for RHOS and K8s -> \<pick version\> -> Installing Db2 -> Installing the Db2 Operator -> Installing OLM to deploy the Db2 Operator  
 > If you are deploying Db2 in multiple namespaces use `namespace-scope`
-
-
-https://www.ibm.com/docs/en/db2/11.5?topic=deployments-db2-rhos-k8s
+#### 3) Create Db2 Operator 
+```
+kubectl create -f \<file path\>/db2uoperator.yaml
+```
 
