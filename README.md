@@ -1,4 +1,4 @@
-## [db2-click](https://www.ibm.com/docs/en/db2/11.5?topic=deployments-click-containerize)
+## [db2-c2c](https://www.ibm.com/docs/en/db2/11.5?topic=deployments-click-containerize)
 #### This repo used to install Db2 on K8s of your choice. Db2 container requrires the Db2 operator.
 #### Namespace
 #### storageclass
