@@ -130,4 +130,19 @@ spec:
             storage: 5Gi
 ```
 > [!NOTE]
-> For information on `spec:` confiuration options goto [IBM Documentation: Db2uInstance custom resource](https://www.ibm.com/docs/en/db2/11.5?topic=resource-deploying-db2-using-db2uinstance-custom)
+> For information on `spec:` confiuration options goto [IBM Documentation: Db2uInstance custom resource](https://www.ibm.com/docs/en/db2/11.5?topic=resource-deploying-db2-using-db2uinstance-custom)  
+
+### Apply the `yaml`
+```
+kubectl create -f \<file path\>/db2create.yaml
+```
+> [!NOTE]
+> It can take several minutes for all the pods to come up.
+> Use command to watch pods come up. Example: `kubectl get pods -n db2u -w`
+```
+db2u-operator-manager-c849d76c4-xl9bs   1/1     Running
+c-demo-instdb-qc42j                     0/1     Completed
+c-demo-etcd-0                           1/1     Running
+c-demo-db2u-0                           1/1     Running
+c-demo-restore-morph-ghvln              0/1     Completed
+```
